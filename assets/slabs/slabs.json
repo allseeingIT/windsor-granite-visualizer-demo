@@ -1,13 +1,77 @@
 {
-  "note": "Sample colors only — not Windsor Granite Co. inventory. Replace files in this folder and update this list to use real slab photos.",
+  "note": "Sample colors only \u2014 not Windsor Granite Co. inventory. Real Wikimedia stone photos.",
   "slabs": [
-    { "id": "black-galaxy", "name": "Black Galaxy", "file": "black-galaxy.png", "kind": "sample" },
-    { "id": "absolute-black", "name": "Absolute Black", "file": "absolute-black.png", "kind": "sample" },
-    { "id": "santa-cecilia", "name": "Santa Cecilia", "file": "santa-cecilia.png", "kind": "sample" },
-    { "id": "white-ice", "name": "White Ice", "file": "white-ice.png", "kind": "sample" },
-    { "id": "calacatta-gold", "name": "Calacatta Gold", "file": "calacatta-gold.png", "kind": "sample" },
-    { "id": "giallo-ornamental", "name": "Giallo Ornamental", "file": "giallo-ornamental.png", "kind": "sample" },
-    { "id": "blue-pearl", "name": "Blue Pearl", "file": "blue-pearl.png", "kind": "sample" },
-    { "id": "concrete-quartz", "name": "Concrete Quartz", "file": "concrete-quartz.png", "kind": "sample" }
+    {
+      "id": "impala-black",
+      "name": "Impala Black",
+      "file": "impala-black.png",
+      "kind": "sample",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3AImpala_Black_Granite_%28gabbronorite%29_Bushveld_Complex.jpg"
+    },
+    {
+      "id": "absolute-black",
+      "name": "Absolute Black",
+      "file": "absolute-black.png",
+      "kind": "sample",
+      "license": "CC BY-SA 4.0",
+      "credit": "VR Granite",
+      "commons": "https://commons.wikimedia.org/wiki/File%3AAbsolute_Black.jpg"
+    },
+    {
+      "id": "tan-brown",
+      "name": "Tan Brown",
+      "file": "tan-brown.png",
+      "kind": "sample",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3A%22Tan_Brown_Granite%22_%28porphyritic_granite%2C_Archean%3B_Andhra_Pradesh_State%2C_southern_India%29_%2814618910269%29.jpg"
+    },
+    {
+      "id": "dakota-mahogany",
+      "name": "Dakota Mahogany",
+      "file": "dakota-mahogany.png",
+      "kind": "sample",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3A%22Dakota_Mahogany_Granite%22_%28porphyritic_granite%2C_Milbank_Granite%2C_2.6-2.7_Ga%2C_Neoarchean%3B_east_of_Milbank%2C_South_Dakota%2C_USA%29_%2814618866119%29.jpg"
+    },
+    {
+      "id": "polished-grey",
+      "name": "Polished Grey",
+      "file": "polished-grey.png",
+      "kind": "sample",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3AGranite_%28cut_%26_polished_surface%29.jpg"
+    },
+    {
+      "id": "statuarietto",
+      "name": "Statuarietto",
+      "file": "statuarietto.png",
+      "kind": "sample",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3AStatuarietto_White_Marble_%28Apuan_Marble_Formation%2C_Tertiary_metamorphism_of_Jurassic_limestones%3B_Carrara_region%2C_Italy%29_1_%2841756469702%29.jpg"
+    },
+    {
+      "id": "volga-blue",
+      "name": "Volga Blue",
+      "file": "volga-blue.png",
+      "kind": "sample",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3AVolga_Blue_Granite_%28anorthosite%29_Zhitomir_Province%2C_Ukraine.jpg"
+    },
+    {
+      "id": "columbia-pink",
+      "name": "Columbia Pink",
+      "file": "columbia-pink.png",
+      "kind": "sample",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3A%22Columbia_Pink_Granite%22_%28porphyritic_granite%2C_Conway_Granite%2C_Jurassic%3B_east_of_Tinkerville%2C_New_Hampshire%2C_USA%29_%2814618798910%29.jpg"
+    }
   ]
 }
