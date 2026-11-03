@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f4f1ec;
+  --surface: #ffffff;
+  --ink: #1a1a1a;
+  --muted: #5c5c5c;
+  --line: #d8d2c8;
+  --accent: #3d5a4c;
+  --accent-ink: #ffffff;
+  --danger: #8b3a3a;
+  --radius: 0;
+  --pad: 12px;
+  --max: 720px;
+  --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: var(--pad);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+header.app-header {
+  padding: 8px 0 4px;
+}
+
+header.app-header h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.tagline {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 10px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+button,
+.label-btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 10px 12px;
+  min-height: 44px;
+  cursor: pointer;
+  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  touch-action: manipulation;
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button.active {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.label-btn input {
+  display: none;
+}
+
+.hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.stage-wrap {
+  position: relative;
+  width: 100%;
+  background: #2a2a2a;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.stage-wrap canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  margin: 0 auto;
+  cursor: crosshair;
+}
+
+.stage-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  text-align: center;
+  padding: 24px;
+  pointer-events: none;
+  font-size: 0.95rem;
+}
+
+.stage-wrap.has-image .stage-empty {
+  display: none;
+}
+
+.section-title {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  font-weight: 650;
+}
+
+.slab-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+@media (max-width: 400px) {
+  .slab-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.slab-card {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: left;
+  min-height: 0;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.slab-card.selected {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.slab-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #eee;
+}
+
+.slab-card span {
+  display: block;
+  padding: 6px 8px;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sample-note {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.callout {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.callout a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+footer.app-footer {
+  margin-top: auto;
+  padding: 16px var(--pad) 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.status {
+  min-height: 1.2em;
+  font-size: 0.85rem;
+  color: var(--muted);
+}

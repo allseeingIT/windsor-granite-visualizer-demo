@@ -1,0 +1,13 @@
+{
+  "note": "Sample colors only — not Windsor Granite Co. inventory. Replace files in this folder and update this list to use real slab photos.",
+  "slabs": [
+    { "id": "black-galaxy", "name": "Black Galaxy", "file": "black-galaxy.png", "kind": "sample" },
+    { "id": "absolute-black", "name": "Absolute Black", "file": "absolute-black.png", "kind": "sample" },
+    { "id": "santa-cecilia", "name": "Santa Cecilia", "file": "santa-cecilia.png", "kind": "sample" },
+    { "id": "white-ice", "name": "White Ice", "file": "white-ice.png", "kind": "sample" },
+    { "id": "calacatta-gold", "name": "Calacatta Gold", "file": "calacatta-gold.png", "kind": "sample" },
+    { "id": "giallo-ornamental", "name": "Giallo Ornamental", "file": "giallo-ornamental.png", "kind": "sample" },
+    { "id": "blue-pearl", "name": "Blue Pearl", "file": "blue-pearl.png", "kind": "sample" },
+    { "id": "concrete-quartz", "name": "Concrete Quartz", "file": "concrete-quartz.png", "kind": "sample" }
+  ]
+}
