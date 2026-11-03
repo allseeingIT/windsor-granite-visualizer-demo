@@ -1,36 +1,30 @@
-# Independent ship-gate review — Windsor Granite visualizer
+# Independent ship-gate review — Windsor Granite visualizer (revision)
 
-Date: 2026-11-02 America/Chicago
+Date: 2026-11-02 America/Chicago  
+Reviewer: fresh checklist pass (not builder self-grade)  
+Crops inspected: `shots/inspect-390-edgeL.png`, `inspect-390-edgeR.png`, `inspect-390-sink.png`, `inspect-v6-edgeL-compare.png`, `inspect-v6-edgeR-compare.png`, `inspect-v6-sink-compare.png`, plus full `before/after-{390,360,1280}.png`.
 
-Reviewer: fresh checklist pass (not builder self-grade)
-
-| Item | Verdict | Note |
+| Item | Verdict | Note / crop |
 |---|---|---|
-| Static site / no backend | **PASS** | Local assets + objectURL uploads only |
-| Folder /workspace/clients/windsor-granite/visualizer/ | **PASS** |  |
-| Photos never leave device | **PASS** |  |
-| Tap-corner polygon masking | **PASS** |  |
-| Multiple polygons + undo/clear | **PASS** |  |
-| Auto-seg skipped (phone reliability) | **PASS** |  |
-| Texture map + luminance blend + soft edge | **PASS** |  |
-| Before/after + download | **PASS** |  |
-| 8 sample colors, labeled Sample colors | **PASS** |  |
-| Not-inventory disclaimer | **PASS** |  |
-| Header text | **PASS** |  |
-| Footer ALLSEEING RESEARCH SERVICES | **PASS** |  |
-| Call (660) 596-1704 for a free quote | **PASS** |  |
-| No pill/badge/rounded label chrome | **PASS** |  |
-| Openly licensed sample kitchen + credit | **PASS** |  |
-| Procedural slabs licensed | **PASS** |  |
-| Drop-in slab docs in README | **PASS** |  |
-| Screenshots 390/360/1280 before+after | **PASS** | [] |
-| No standing-rule forbidden content | **PASS** | [] |
-| Public https live | **PASS** | https://allseeingit.github.io/windsor-granite-visualizer-demo/ |
-| Visual: no clipped/overlapping labels at 390 | **PASS** | after-390 re-read |
-| Visual: slab appears on counters after apply | **PASS** | Black Galaxy on kitchen counters |
-| Visual: no repeated labels | **PASS** |  |
+| Static site, photos stay on device | **PASS** | objectURL uploads; no backend |
+| Real Wikimedia stone swatches (not flat noise) | **PASS** | 8 Commons polished-stone photos; credited |
+| Sample kitchen openly licensed + credited | **PASS** | Emerald Pearl Kitchen, CC BY 3.0 |
+| Pre-traced sample mask present (one-tap) | **PASS** | `sample-mask.json` + soft PNG; Apply sample mask |
+| Manual tap masking still available | **PASS** | Done shape / Undo / Clear |
+| **Mask edges align with real counter at 100% zoom** | **FAIL** | `inspect-390-edgeL/R`, `inspect-v6-*-compare`: overlay misses bullnose, bleeds past front edge / into sink or cabinets |
+| **Sink cutout respected** | **FAIL** | `inspect-390-sink`, `inspect-v6-sink-compare`: texture crosses basin / faucet deck incorrectly |
+| Perspective matches counter plane | **FAIL** | After frames: slab reads as flat slanted bands, not seated on the plane |
+| Luminance blend keeps photo lighting/reflections | **FAIL** | Crops show sticker-like / ghostly paste; highlights not convincingly carried |
+| 1–2px feather, no visible outline | **PARTIAL** | Soft mask blur present; no edit outlines on sample after — still hard/jagged in places |
+| Would a homeowner believe the counter was replaced? | **FAIL** | Core realism gate — no |
+| Header / footer / call line / Sample colors disclaimer | **PASS** | Verified in after-390 DOM + screenshot |
+| No pills/badges | **PASS** | |
+| Status text not debug-like | **PASS** | e.g. “Showing Impala Black.” |
+| Vertical spacing tighter on 390 | **PASS** | Photo higher; reduced gaps |
+| Screenshots 390/360/1280 before+after | **PASS** | Present under `shots/` |
+| Public https redeployed | **PASS** | same Pages URL |
 
-**Summary:** 23 PASS, 0 FAIL
+**Summary:** 10 PASS, 1 PARTIAL, 4 FAIL (realism cluster).
 
 ## Overall
-**PASS**
+**FAIL — do not send to Scott / owner until mask + blend pass the 100% edge crops and the homeowner-belief test.**

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#f4f1ec" />
-  <meta name="description" content="Windsor Granite Co. countertop visualizer demo. Photos stay on your device." />
+  <meta name="description" content="Windsor Granite Co. countertop visualizer demo — example rooms with sample stone colors." />
   <title>Windsor Granite Co. Countertop Visualizer (demo)</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -12,37 +12,32 @@
   <div class="wrap">
     <header class="app-header">
       <h1>Windsor Granite Co. Countertop Visualizer (demo)</h1>
-      <p class="tagline">See sample stone on a kitchen photo. Your photos stay on this device.</p>
+      <p class="tagline">Preview sample stone colors on example rooms.</p>
     </header>
 
-    <div class="panel toolbar" role="group" aria-label="Photo">
-      <button type="button" class="primary" id="btn-sample">Use sample kitchen</button>
-      <label class="label-btn" for="file-input">Upload photo
-        <input id="file-input" type="file" accept="image/*" />
-      </label>
+    <section class="panel" aria-labelledby="scene-heading">
+      <h2 class="section-title" id="scene-heading">Example rooms</h2>
+      <div class="scene-strip" id="scene-strip" role="listbox" aria-label="Example rooms"></div>
+    </section>
+
+    <div class="stage-wrap has-image" id="stage-wrap">
+      <div class="stage" id="stage" aria-label="Room preview">
+        <img id="img-base" alt="" decoding="async" />
+        <img id="img-variant" alt="" decoding="async" />
+      </div>
     </div>
 
-    <div class="panel toolbar" role="group" aria-label="Mask tools">
-      <button type="button" id="btn-apply-mask" disabled>Apply sample mask</button>
-      <button type="button" id="btn-done-shape" disabled>Done shape</button>
-      <button type="button" id="btn-undo" disabled>Undo</button>
-      <button type="button" id="btn-clear" disabled>Clear</button>
-      <button type="button" id="btn-before-after" disabled>Show before</button>
-      <button type="button" id="btn-download" disabled>Download</button>
+    <div class="panel toolbar" role="group" aria-label="View">
+      <button type="button" id="btn-before-after" class="primary">Show before</button>
     </div>
-
     <p class="hint" id="status">Loading…</p>
-
-    <div class="stage-wrap" id="stage-wrap">
-      <canvas id="stage" width="960" height="720" aria-label="Kitchen photo editor"></canvas>
-      <div class="stage-empty">Load a photo to begin</div>
-    </div>
 
     <section class="panel" aria-labelledby="slab-heading">
       <h2 class="section-title" id="slab-heading">Sample colors</h2>
       <div class="slab-strip" id="slab-strip"></div>
-      <p class="sample-note">Sample colors only — not Windsor Granite Co. inventory. Stone photos from Wikimedia Commons (see credits below).</p>
-      <p class="sample-note" id="photo-credit">Sample kitchen photo: Emerald Pearl Kitchen / Wikimedia Commons (CC BY 3.0).</p>
+      <p class="sample-note">Sample colors, not Windsor Granite Co. inventory. Stone swatches from Wikimedia Commons (credited below).</p>
+      <p class="sample-note">Example rooms are AI-generated for this demo only — not Windsor Granite Co. installations or shop photos.</p>
+      <p class="sample-note" id="photo-credit"></p>
     </section>
 
     <p class="callout">Call <a href="tel:+16605961704">(660) 596-1704</a> for a free quote</p>

@@ -1,0 +1,27 @@
+{
+  "source": "wm03 EFTA00002083 Public domain",
+  "work_size": [
+    640,
+    960
+  ],
+  "quad": [
+    [
+      2.8981001377105713,
+      518.3433837890625
+    ],
+    [
+      536.0640258789062,
+      541.5245361328125
+    ],
+    [
+      528.5602416992188,
+      714.111328125
+    ],
+    [
+      0.0,
+      690.93017578125
+    ]
+  ],
+  "mask_area": 52120,
+  "method": "SAM AutomaticMaskGenerator + morph cleanup + front-edge clip + hole fill"
+}

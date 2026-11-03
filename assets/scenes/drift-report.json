@@ -1,0 +1,167 @@
+{
+  "results": [
+    {
+      "scene": "farmhouse",
+      "stone": "impala-black",
+      "mae_out": 7.56,
+      "mae_in": 28.93,
+      "mae_floor": 7.29,
+      "edge_diff": 14.06,
+      "status": "PASS"
+    },
+    {
+      "scene": "farmhouse",
+      "stone": "absolute-black",
+      "mae_out": 7.4,
+      "mae_in": 30.5,
+      "mae_floor": 6.86,
+      "edge_diff": 12.84,
+      "status": "PASS"
+    },
+    {
+      "scene": "farmhouse",
+      "stone": "tan-brown",
+      "mae_out": 7.9,
+      "mae_in": 29.0,
+      "mae_floor": 8.01,
+      "edge_diff": 12.86,
+      "status": "PASS"
+    },
+    {
+      "scene": "farmhouse",
+      "stone": "dakota-mahogany",
+      "mae_out": 7.1,
+      "mae_in": 23.82,
+      "mae_floor": 7.21,
+      "edge_diff": 13.96,
+      "status": "PASS"
+    },
+    {
+      "scene": "farmhouse",
+      "stone": "statuarietto",
+      "mae_out": 6.66,
+      "mae_in": 14.58,
+      "mae_floor": 7.82,
+      "edge_diff": 12.39,
+      "status": "PASS"
+    },
+    {
+      "scene": "farmhouse",
+      "stone": "polished-grey",
+      "mae_out": 4.55,
+      "mae_in": 11.18,
+      "mae_floor": 4.37,
+      "edge_diff": 11.09,
+      "status": "PASS"
+    },
+    {
+      "scene": "modern-l",
+      "stone": "impala-black",
+      "mae_out": 13.75,
+      "mae_in": 42.88,
+      "mae_floor": 3.86,
+      "edge_diff": 10.54,
+      "status": "PASS"
+    },
+    {
+      "scene": "modern-l",
+      "stone": "absolute-black",
+      "mae_out": 15.06,
+      "mae_in": 48.25,
+      "mae_floor": 3.31,
+      "edge_diff": 4.19,
+      "status": "PASS"
+    },
+    {
+      "scene": "modern-l",
+      "stone": "tan-brown",
+      "mae_out": 14.4,
+      "mae_in": 43.17,
+      "mae_floor": 4.58,
+      "edge_diff": 10.57,
+      "status": "PASS"
+    },
+    {
+      "scene": "modern-l",
+      "stone": "dakota-mahogany",
+      "mae_out": 12.82,
+      "mae_in": 40.14,
+      "mae_floor": 3.94,
+      "edge_diff": 10.63,
+      "status": "PASS"
+    },
+    {
+      "scene": "modern-l",
+      "stone": "statuarietto",
+      "mae_out": 4.0,
+      "mae_in": 11.94,
+      "mae_floor": 3.36,
+      "edge_diff": 4.97,
+      "status": "PASS"
+    },
+    {
+      "scene": "modern-l",
+      "stone": "polished-grey",
+      "mae_out": 6.58,
+      "mae_in": 17.67,
+      "mae_floor": 3.19,
+      "edge_diff": 10.91,
+      "status": "PASS"
+    },
+    {
+      "scene": "vanity",
+      "stone": "impala-black",
+      "mae_out": 11.41,
+      "mae_in": 41.44,
+      "mae_floor": 6.81,
+      "edge_diff": 14.8,
+      "status": "PASS"
+    },
+    {
+      "scene": "vanity",
+      "stone": "absolute-black",
+      "mae_out": 12.74,
+      "mae_in": 48.81,
+      "mae_floor": 7.47,
+      "edge_diff": 11.97,
+      "status": "PASS"
+    },
+    {
+      "scene": "vanity",
+      "stone": "tan-brown",
+      "mae_out": 11.29,
+      "mae_in": 39.62,
+      "mae_floor": 7.2,
+      "edge_diff": 14.58,
+      "status": "PASS"
+    },
+    {
+      "scene": "vanity",
+      "stone": "dakota-mahogany",
+      "mae_out": 9.59,
+      "mae_in": 31.1,
+      "mae_floor": 6.56,
+      "edge_diff": 14.54,
+      "status": "PASS"
+    },
+    {
+      "scene": "vanity",
+      "stone": "statuarietto",
+      "mae_out": 6.68,
+      "mae_in": 11.15,
+      "mae_floor": 7.8,
+      "edge_diff": 10.94,
+      "status": "PASS"
+    },
+    {
+      "scene": "vanity",
+      "stone": "polished-grey",
+      "mae_out": 7.89,
+      "mae_in": 18.81,
+      "mae_floor": 7.67,
+      "edge_diff": 14.21,
+      "status": "PASS"
+    }
+  ],
+  "rejects": []
+}

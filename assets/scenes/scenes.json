@@ -1,0 +1,73 @@
+{
+  "note": "Example rooms are AI-generated for demo only \u2014 not Windsor Granite Co. installations. Sample colors are Wikimedia Commons stone photos \u2014 not Windsor inventory.",
+  "scenes": [
+    {
+      "id": "farmhouse",
+      "name": "Farmhouse kitchen",
+      "dir": "scenes/farmhouse",
+      "thumb": "scenes/farmhouse/base.png"
+    },
+    {
+      "id": "modern-l",
+      "name": "Modern L-run",
+      "dir": "scenes/modern-l",
+      "thumb": "scenes/modern-l/base.png"
+    },
+    {
+      "id": "vanity",
+      "name": "Bathroom vanity",
+      "dir": "scenes/vanity",
+      "thumb": "scenes/vanity/base.png"
+    }
+  ],
+  "stones": [
+    {
+      "id": "impala-black",
+      "name": "Impala Black",
+      "swatch": "scenes/_swatches/impala-black.png",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3AImpala_Black_Granite_%28gabbronorite%29_Bushveld_Complex.jpg"
+    },
+    {
+      "id": "absolute-black",
+      "name": "Absolute Black",
+      "swatch": "scenes/_swatches/absolute-black.png",
+      "license": "CC BY-SA 4.0",
+      "credit": "VR Granite",
+      "commons": "https://commons.wikimedia.org/wiki/File%3AAbsolute_Black.jpg"
+    },
+    {
+      "id": "tan-brown",
+      "name": "Tan Brown",
+      "swatch": "scenes/_swatches/tan-brown.png",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3A%22Tan_Brown_Granite%22_%28porphyritic_granite%2C_Archean%3B_Andhra_Pradesh_State%2C_southern_India%29_%2814618910269%29.jpg"
+    },
+    {
+      "id": "dakota-mahogany",
+      "name": "Dakota Mahogany",
+      "swatch": "scenes/_swatches/dakota-mahogany.png",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3A%22Dakota_Mahogany_Granite%22_%28porphyritic_granite%2C_Milbank_Granite%2C_2.6-2.7_Ga%2C_Neoarchean%3B_east_of_Milbank%2C_South_Dakota%2C_USA%29_%2814618866119%29.jpg"
+    },
+    {
+      "id": "statuarietto",
+      "name": "Statuarietto",
+      "swatch": "scenes/_swatches/statuarietto.png",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3AStatuarietto_White_Marble_%28Apuan_Marble_Formation%2C_Tertiary_metamorphism_of_Jurassic_limestones%3B_Carrara_region%2C_Italy%29_1_%2841756469702%29.jpg"
+    },
+    {
+      "id": "polished-grey",
+      "name": "Polished Grey",
+      "swatch": "scenes/_swatches/polished-grey.png",
+      "license": "CC BY 2.0",
+      "credit": "James St. John",
+      "commons": "https://commons.wikimedia.org/wiki/File%3AGranite_%28cut_%26_polished_surface%29.jpg"
+    }
+  ]
+}
