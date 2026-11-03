@@ -430,8 +430,10 @@
     );
   }
 
+  let ignoreClickUntil = 0;
   canvas.addEventListener("click", (e) => {
     if (!baseImage) return;
+    if (Date.now() < ignoreClickUntil) return;
     const p = canvasPointFromEvent(e);
     addPoint(p.x, p.y);
   });
@@ -441,6 +443,7 @@
     (e) => {
       if (!baseImage) return;
       e.preventDefault();
+      ignoreClickUntil = Date.now() + 500;
       if (!e.changedTouches || !e.changedTouches.length) return;
       const t = e.changedTouches[0];
       const rect = canvas.getBoundingClientRect();
@@ -496,8 +499,15 @@
       for (const el of slabStrip.querySelectorAll(".slab-card")) {
         el.classList.toggle("selected", el.dataset.id === id);
       }
+      const meta = slabs.find((s) => s.id === id);
+      const name = meta ? meta.name : id;
       render();
       syncButtons();
+      setStatus(
+        polygons.length
+          ? `Showing ${name}. Toggle Before/After or mark another area.`
+          : `${name} selected. Mark the countertop first.`
+      );
     },
     addPolygon: (pts) => {
       polygons.push({
@@ -509,6 +519,11 @@
       draft = [];
       render();
       syncButtons();
+      setStatus(
+        selectedSlabId
+          ? "Shape added. Tap another area or pick a sample color."
+          : "Shape added. Pick a sample color below."
+      );
     },
     getState: () => ({
       polygons: polygons.length,
@@ -529,38 +544,36 @@
     const data = await res.json();
     slabs = data.slabs || [];
     slabStrip.innerHTML = "";
-    await Promise.all(
-      slabs.map(async (s) => {
-        const img = await loadImageFromURL("assets/slabs/" + s.file);
-        slabImages.set(s.id, img);
-        const btn = document.createElement("button");
-        btn.type = "button";
-        btn.className = "slab-card";
-        btn.setAttribute("aria-label", s.name);
-        btn.dataset.id = s.id;
-        const thumb = document.createElement("img");
-        thumb.src = "assets/slabs/" + s.file;
-        thumb.alt = "";
-        const label = document.createElement("span");
-        label.textContent = s.name;
-        btn.appendChild(thumb);
-        btn.appendChild(label);
-        btn.addEventListener("click", () => {
-          selectedSlabId = s.id;
-          showBefore = false;
-          for (const el of slabStrip.querySelectorAll(".slab-card")) {
-            el.classList.toggle("selected", el.dataset.id === s.id);
-          }
-          render();
-          syncButtons();
-          setStatus(
-            polygons.length
-              ? `Showing ${s.name}. Toggle Before/After or mark another area.`
-              : `${s.name} selected. Mark the countertop first.`
-          );
-        });
-        slabStrip.appendChild(btn);
-      })
-    );
+    for (const s of slabs) {
+      const img = await loadImageFromURL("assets/slabs/" + s.file);
+      slabImages.set(s.id, img);
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "slab-card";
+      btn.setAttribute("aria-label", s.name);
+      btn.dataset.id = s.id;
+      const thumb = document.createElement("img");
+      thumb.src = "assets/slabs/" + s.file;
+      thumb.alt = "";
+      const label = document.createElement("span");
+      label.textContent = s.name;
+      btn.appendChild(thumb);
+      btn.appendChild(label);
+      btn.addEventListener("click", () => {
+        selectedSlabId = s.id;
+        showBefore = false;
+        for (const el of slabStrip.querySelectorAll(".slab-card")) {
+          el.classList.toggle("selected", el.dataset.id === s.id);
+        }
+        render();
+        syncButtons();
+        setStatus(
+          polygons.length
+            ? `Showing ${s.name}. Toggle Before/After or mark another area.`
+            : `${s.name} selected. Mark the countertop first.`
+        );
+      });
+      slabStrip.appendChild(btn);
+    }
   }
 })();
